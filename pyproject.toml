@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brightway-lca-demo"
+version = "1.0.0"
+description = "A complete, reproducible Brightway 2.5 LCA demonstration project"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "LCA Demo Contributor", email = "demo@example.com"}
+]
+keywords = ["lca", "life-cycle-assessment", "brightway", "sustainability", "environmental-impact"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Information Analysis"
+]
+dependencies = [
+    "bw2data>=4.0",
+    "bw2calc>=2.0",
+    "bw2io>=0.9",
+    "matrix_utils",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "matplotlib>=3.7.0",
+    "pyyaml>=6.0",
+    "openpyxl>=3.1.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.3.0",
+    "pytest-cov>=4.1.0",
+    "jupyter>=1.0.0",
+    "black>=23.3.0",
+    "flake8>=6.0.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
