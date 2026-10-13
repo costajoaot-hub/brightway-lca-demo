@@ -1,0 +1,14 @@
+project:
+  name: "Brightway_Packaging_Demo"
+
+functional_unit:
+  target_volume_liters: 1000.0
+  pet_bottle_volume_liters: 0.5
+  aluminum_can_volume_liters: 0.33
+
+databases:
+  biosphere: "synthetic_biosphere"
+  foreground: "packaging_foreground"
+
+output_paths:
+  reports: "outputs"
